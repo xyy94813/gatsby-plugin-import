@@ -1,3 +1,9 @@
+# Yarn conf
+yarn.lock
+
+# Dist files
+/gatsby-node.js
+
 # Logs
 logs
 *.log

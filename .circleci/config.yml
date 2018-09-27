@@ -131,21 +131,17 @@ workflows:
             - build
             - test
           filters:
-            branches:
-              only: ci-test
             tags:
-              only: /^v.*/
+              only: /v.*/
       - deploy-normal:
           requires:
             - deploy-pre
           filters:
-            branches:
-              ignore: /.*/
             tags:
-              only: /^v.*/
+              only: /v(\d)+(\.(\d)+)+/
       - deploy-test:
           requires:
             - deploy-pre
           filters:
-            branches:
-              only: ci-test
+            tags:
+              only: /(v(\d)+(\.(\d)+)+)-(alpha|beta)/

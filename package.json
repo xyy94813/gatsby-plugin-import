@@ -31,8 +31,7 @@
     "babel-preset-es2015": "^6.24.1"
   },
   "peerDependencies": {
-    "gatsby": ">2.0.0-alpha",
-    "antd": "^2.0.0 || ^3.0.0"
+    "gatsby": ">2.0.0-alpha"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"

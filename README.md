@@ -37,7 +37,7 @@ module.exports = {
 }
 ```
 
-More useage see [this](https://github.com/ant-design/babel-plugin-import)
+More useage see [there](https://github.com/ant-design/babel-plugin-import)
 
 ## Contruibution
 
@@ -46,3 +46,5 @@ DefinitelyTyped only works because of contributions by users like you!
 ### Git Message
 
 [Follow the Angular git commit message specification](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#commits)
+
+But, you can ignore the `scope`

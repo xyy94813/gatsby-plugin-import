@@ -119,29 +119,44 @@ workflows:
   build-test-deploy:
     jobs:
       - versions
-      - install
+      - install:
+          filters:
+            tags:
+              only: /^v.*/
       - test:
           requires:
             - install
+          filters:
+            tags:
+              only: /^v.*/
       - build:
           requires:
             - install
+          filters:
+            tags:
+              only: /^v.*/
       - deploy-pre:
           requires:
             - build
             - test
           filters:
+            branches:
+              ignore: /.*/
             tags:
-              only: /v.*/
+              only: /^v.*/
       - deploy-normal:
           requires:
             - deploy-pre
           filters:
+            branches:
+              ignore: /.*/
             tags:
-              only: /v(\d)+(\.(\d)+)+/
+              only: /^v(\d)+(\.(\d)+)+/
       - deploy-test:
           requires:
             - deploy-pre
           filters:
+            branches:
+              ignore: /.*/
             tags:
-              only: /(v(\d)+(\.(\d)+)+)-(alpha|beta)/
+              only: /^(v(\d)+(\.(\d)+)+)-(alpha|beta)/

@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-import",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Gatsby plugin to add support for using `babel-plugin-import`",
   "main": "index.js",
   "scripts": {

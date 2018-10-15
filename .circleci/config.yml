@@ -24,12 +24,13 @@ references:
   restore_dist: &RESTORE_DIST
     restore_cache:
       keys: 
-        - dist-cache-{{ .BuildNum }}
+        - dist-cache-{{ .Branch }}-{{ .Revision }}
+        - dist-cache-{{ .Branch }}-
         - dist-cache-
 
   save_dist: &SAVE_DIST
     save_cache:
-      key: dist-cache-{{ .BuildNum }}
+      key: dist-cache-{{ .Branch }}-{{ .Revision }}
       paths:
         - gatsby-node.js
 
@@ -70,7 +71,7 @@ jobs:
       - *RESTORE_DEPENDENCIES
       - run: 
           name: Build Production
-          command: npm build
+          command: npm run build
       - *SAVE_DIST
       - persist_to_workspace:
           root: ~/gatsby-plugin-import

@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`gatsby-plugin-import Lib: @material-ui/core 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "name": "babel-plugin-import",
+        "options": Object {
+          "camel2DashComponentName": false,
+          "libraryDirectory": "components",
+        },
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+  ],
+}
+`;
+
+exports[`gatsby-plugin-import Lib: antd 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "name": "babel-plugin-import",
+        "options": Object {
+          "customName": [MockFunction],
+          "libraryDirectory": "lib",
+          "style": true,
+        },
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+  ],
+}
+`;
+
+exports[`gatsby-plugin-import Lib: antd-mobile 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "name": "babel-plugin-import",
+        "options": Object {
+          "libraryDirectory": "lib",
+          "style": true,
+        },
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+  ],
+}
+`;
+
+exports[`gatsby-plugin-import Lib: lodash 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "name": "babel-plugin-import",
+        "options": Object {
+          "camel2DashComponentName": false,
+        },
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+  ],
+}
+`;
+
+exports[`gatsby-plugin-import Muti Lib 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "name": "babel-plugin-import",
+        "options": Object {
+          "customName": [MockFunction],
+          "libraryDirectory": "lib",
+          "style": true,
+        },
+      },
+    ],
+    Array [
+      Object {
+        "name": "babel-plugin-import",
+        "options": Object {
+          "camel2DashComponentName": false,
+        },
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+  ],
+}
+`;

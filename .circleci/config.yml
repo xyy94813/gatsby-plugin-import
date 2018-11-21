@@ -62,7 +62,10 @@ jobs:
       - *RESTORE_DEPENDENCIES
       - run:
           name: Test
-          command: npm test
+          command: npm test -- -w 1 --coverage
+      - run: 
+          name: Code Coverage
+          command: bash <(curl -s https://codecov.io/bash)
 
   build: 
     <<: *DEFAULT

@@ -45,9 +45,9 @@ module.exports = {
 }
 ```
 
-More useage see [there](https://github.com/ant-design/babel-plugin-import)
+More usage see [there](https://github.com/ant-design/babel-plugin-import)
 
-## Contruibution
+## Contribution
 
 DefinitelyTyped only works because of contributions by users like you!
 

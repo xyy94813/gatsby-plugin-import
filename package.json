@@ -23,15 +23,14 @@
     "url": "https://github.com/xyy94813/gatsby-plugin-import/issues"
   },
   "homepage": "https://github.com/xyy94813/gatsby-plugin-import#readme",
-  "dependencies": {
-    "babel-plugin-import": "^1.9.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "jest": "^23.6.0"
   },
   "peerDependencies": {
+    "babel-plugin-import": ">1.9.1",
     "gatsby": ">2.0.0-alpha"
   },
   "publishConfig": {

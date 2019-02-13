@@ -17,11 +17,13 @@
 
 Use npm: 
 ```
+npm i babel-plugin-import -D
 npm i gatsby-plugin-import -S
 ```
 
 Or use yarn:
 ```
+yarn add babel-plugin-import -D
 yarn add gatsby-plugin-import
 ```
 

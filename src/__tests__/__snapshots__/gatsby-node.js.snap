@@ -15,7 +15,7 @@ exports[`gatsby-plugin-import Lib: @material-ui/core 1`] = `
   ],
   "results": Array [
     Object {
-      "isThrow": false,
+      "type": "return",
       "value": undefined,
     },
   ],
@@ -38,7 +38,7 @@ exports[`gatsby-plugin-import Lib: antd 1`] = `
   ],
   "results": Array [
     Object {
-      "isThrow": false,
+      "type": "return",
       "value": undefined,
     },
   ],
@@ -60,7 +60,7 @@ exports[`gatsby-plugin-import Lib: antd-mobile 1`] = `
   ],
   "results": Array [
     Object {
-      "isThrow": false,
+      "type": "return",
       "value": undefined,
     },
   ],
@@ -81,7 +81,7 @@ exports[`gatsby-plugin-import Lib: lodash 1`] = `
   ],
   "results": Array [
     Object {
-      "isThrow": false,
+      "type": "return",
       "value": undefined,
     },
   ],
@@ -112,11 +112,11 @@ exports[`gatsby-plugin-import Muti Lib 1`] = `
   ],
   "results": Array [
     Object {
-      "isThrow": false,
+      "type": "return",
       "value": undefined,
     },
     Object {
-      "isThrow": false,
+      "type": "return",
       "value": undefined,
     },
   ],

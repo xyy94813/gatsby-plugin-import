@@ -11,13 +11,13 @@ references:
     # A path is not required here because the cache will be restored to the location from which it was originally saved.
     restore_cache:
       keys: 
-        - dependencies-cache-{{ checksum "package.json" }}-{{ checksum "package-lock.json" }}
+        - dependencies-cache-{{ checksum "package.json" }}
         - dependencies-cache-
 
   save_dependencies: &SAVE_DEPENDENCIES
     save_cache:
       # when: always
-      key: dependencies-cache-{{ checksum "package.json" }}-{{ checksum "package-lock.json" }}
+      key: dependencies-cache-{{ checksum "package.json" }}
       paths:
         - node_modules
 

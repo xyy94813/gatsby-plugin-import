@@ -1,16 +1,15 @@
 version: 2
 
 references:
-
   defaults: &DEFAULT
     working_directory: ~/gatsby-plugin-import
     docker:
-      - image: circleci/node:8.9.1
+      - image: circleci/node:14.4.0
 
-  restore_dependencies: &RESTORE_DEPENDENCIES
-    # A path is not required here because the cache will be restored to the location from which it was originally saved.
+  restore_dependencies:
+    &RESTORE_DEPENDENCIES # A path is not required here because the cache will be restored to the location from which it was originally saved.
     restore_cache:
-      keys: 
+      keys:
         - dependencies-cache-{{ checksum "package.json" }}
         - dependencies-cache-
 
@@ -23,7 +22,7 @@ references:
 
   restore_dist: &RESTORE_DIST
     restore_cache:
-      keys: 
+      keys:
         - dist-cache-{{ .Branch }}-{{ .Revision }}
         - dist-cache-{{ .Branch }}-
         - dist-cache-
@@ -63,16 +62,16 @@ jobs:
       - run:
           name: Test
           command: npm test -- -w 1 --coverage
-      - run: 
+      - run:
           name: Code Coverage
           command: bash <(curl -s https://codecov.io/bash)
 
-  build: 
+  build:
     <<: *DEFAULT
     steps:
       - checkout
       - *RESTORE_DEPENDENCIES
-      - run: 
+      - run:
           name: Build Production
           command: npm run build
       - *SAVE_DIST
@@ -93,7 +92,7 @@ jobs:
       - run: npm whoami
       - persist_to_workspace:
           root: ~/
-          paths: 
+          paths:
             - .npmrc
 
   deploy-normal:

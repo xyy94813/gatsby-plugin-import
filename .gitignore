@@ -1,6 +1,5 @@
 # Dependencies lock
 yarn.lock
-package-lock.json
 
 # Dist files
 /gatsby-node.js

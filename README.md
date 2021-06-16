@@ -11,17 +11,25 @@
 [![npm package](https://img.shields.io/npm/v/gatsby-plugin-import.svg?style=flat-square)](https://www.npmjs.org/package/gatsby-plugin-import)
 [![npm downloads](https://img.shields.io/npm/dm/gatsby-plugin-import.svg?style=flat-square)](http://npmjs.com/gatsby-plugin-import)
 
+> **Note: this plugin isn't necessary and will no longer be maintained.**
+>
+> You can use custom babelrc file to configure `babel-plugin-import`.
+>
+> More details see: [How to use custom babelrc file in Gatsby](https://www.gatsbyjs.com/docs/how-to/custom-configuration/babel/#how-to-use-a-custom-babelrc-file)
+
 ## Usage
 
 ### Install
 
-Use npm: 
+Use npm:
+
 ```
 npm i babel-plugin-import -D
 npm i gatsby-plugin-import -S
 ```
 
 Or use yarn:
+
 ```
 yarn add babel-plugin-import -D
 yarn add gatsby-plugin-import
